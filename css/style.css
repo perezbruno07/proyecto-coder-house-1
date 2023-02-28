@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.titulo1 {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 136px;
+
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 77px;
+
+}
+
+/* hader*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #30E8BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(23, 100%, 60%, 0.637), #30E8BF), url(../Multimedia/img/imagen\ de\ portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(23, 100%, 60%, 0.637), #30E8BF), url(../Multimedia/img/imagen\ de\ portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+    background: #30e8c069;
+}
+
+nav>a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    -webkit-text-stroke: black;
+
+}
+
+nav> :hover {
+    text-decoration: underline;
+
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header.texto-header {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.texto-header h1 {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    margin: 120px;
+
+}
+
+.texto-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin: 120px;
+
+}
+
+/* Sobre Nosotros*/
+
+.contenerdor-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.imagen-about-us {
+    width: 20;
+    border-radius: 50%;
+    padding: 30px;
+
+}
+
+.contenerdor-nosotros .contenido-textos {
+    width: 48%;
+
+}
+
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contenido-textos h3 span {
+    background: #4d0686;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    padding: 2px;
+    height: 30px;
+    margin-right: 15px;
+
+
+
+}
+
+.contenido-textos p {
+    text-align: initial;
+}
+
+/*Articulo Destacados*/
+
+.Articulo-Destacado {
+    background: hsla(143, 51%, 65%, 0.356);
+    width: 100%;
+}
+
+.galeria-Artriculo-Destacado {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+
+
+
+}
+
+.galeria {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+figure {
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+
+}
+
+
+
+.card {
+    width: 30%;
+    margin: 7px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 30%);
+}
+
+.card img {
+    height: inherit;
+    object-fit: cover;
+
+}
+
+.contenido h3 {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.contenido>p {
+    text-align: center;
+    padding: 3px;
+    margin: 20px;
+}
+
+.contenido a {
+    text-decoration: none;
+    float: right;
+    padding: 3px;
+    margin: 3px;
+}
+
+
+/*Suscripcion*/
+
+.img-suscripciones {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.suscripciones img {
+    width: 45%;
+    padding: inherit;
+    border-radius: 120px;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    -ms-border-radius: 120px;
+    -o-border-radius: 120px;
+}
+
+.suscripciones p {
+    text-align: center;
+}
+
+/*Footer*/
+
+.contenedor-footer {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    background: hsla(143, 51%, 65%, 0.356);
+}
+
+.titulo-final {
+    justify-content: right;
+    background: hsla(143, 51%, 65%, 0.356);
+    display: flex;
+    color: #27272794;
+    font-size: 20px;
+}
+
+
+/*Page Sobre Nosotros*/
+
+.nav-sobre-nosotros {
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    background: hsla(143, 51%, 65%, 0.356);
+
+}
+
+.contenedor-de-imagen-sobre-nosotros {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-sobre-nosotros img {
+    height: 180px;
+}
+
+.contenido-texto p {
+    margin-top: -50px
+}
+
+.contenido-texto {
+    padding: 19px;
+    padding-block-end: 48px;
+    text-align: center;
+}
+
+/*suscripciones*/
+
+.Comprar1 {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    color: #333333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: hsla(143, 51%, 65%, 0.356);
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    display: block;
+    margin: auto;
+    border-radius: 35px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 30%);
+}
+
+.card-suscripcion {
+    width: 30%;
+    margin: 7px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 30%);
+}
+
+.card-suscripcion img {
+    height: inherit;
+    object-fit: cover;
+}
+
+.img-sobre-nosotros {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.img-sobre-nosotros img {
+    width: 50%;
+    padding: 5px;
+    margin: 20px;
+}
+
+/*Contacto*/
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: hsla(143, 51%, 65%, 0.356);
+    padding-left: 30px;
+    box-shadow: 18px 18px 28px 4px rgba(0, 0, 0, 0.64);
+}
+
+
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #ab4493;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+}
+
+
+button p {
+    color: #fff;
+}
+
+
+span {
+    color: #ab4493;
+}
+
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+
+h1 {
+    margin-left: -18px;
+    font-size: 30px;
+    padding: 26px;
+    color: #ab4493;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+
+p {
+    font-size: 14px;
+    color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+.formulario {
+    padding: 4px;
+    margin: 10px;
+}
+
+/* Resolucion de Tablet*/
+
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 30px 10px 0 0;
+    }
+
+    .titulo {
+        margin-bottom: 19px;
+    }
+
+    .contenido-texto p {
+        margin-top: 2px;
+    }
+
+    .img-sobre-nosotros {
+
+        flex-wrap: wrap;
+    }
+
+    .img-sobre-nosotros img {
+        height: auto;
+        margin: auto;
+    }
+
+    .titulo-final {
+        justify-content: center;
+        font-size: 20px;
+
+    }
+
+    button {
+        width: 80%;
+        cursor: pointer;
+        margin-left: 31px;
+    }
+
+    .formulario {
+        padding: 4px;
+        margin: 0px;
+    }
+
+}
+
+/* Resolucion de Celular*/
+
+@media (max-width: 375px) {
+
+    nav {
+        text-align: center;
+        padding: 15px 0 5px 0;
+        background: #30e8c069;
+    }
+
+    nav>a {
+
+        margin-right: 10px;
+        font: menu;
+
+    }
+
+    .texto-header h1 {
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        padding: 150px 100px;
+        margin: auto;
+    }
+
+    .imagen-about-us {
+        display: none;
+    }
+  
+    .contenerdor-nosotros .contenido-textos {
+        width: 90%;
+
+        }
+    .titulo1{
+        margin-bottom: 23px;
+    }
+
+    .galeria {
+        width: 100%;
+        display: grid;
+        padding: 5px;
+        grid-auto-columns: auto;
+        justify-items: center;
+        
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .suscripciones p {
+        text-align: center;
+        margin: 5px 5px;
+    }
+
+    .suscripciones img {
+        width: 80%;
+        
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+    }
+
+    .content-foo{
+        width: 40%;
+    }
+
+    .titulo-final {
+        font-size: 20px;
+    }
+
+    .card-suscripcion {
+        width: 80%;
+       
+    }
+
+    .formulario {
+        width: 80%;
+        
+    }
+
+    .contact_form {
+        width: 80%;
+        }
+
+    input{
+        width: 100%;
+    }
+        
+    textarea{
+        width: 100%;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
