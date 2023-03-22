@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog & Cat Pet Store</title>
     <link rel="shortcut icon" href="Multimedia/img/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +19,39 @@
         rel="stylesheet">
 </head>
 
-    <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="./Pages/Sobre-nosotros.html">Sobre nosotros</a>
-        <a href="./Pages/Articulos.html">Ariculos</a>
-        <a href="./Suscripciones.html">Suscripciones</a>
-        <a href="./Contacto.html">Contacto</a>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Articulos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suscripciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
     </nav>
     <body>
    
@@ -73,7 +105,7 @@
                             placeholder="Deja aquí tu comentario..."></textarea>
                     </p>
     
-                    <button type="submit" name="enviar_formulario" id="enviar">
+                    <button type="submit-comtacto" name="enviar_formulario" id="button-enviar">
                         <p>Enviar</p>
                     </button>
     
@@ -87,26 +119,45 @@
     
     </body>
     <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>+876987876543</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>nolose@gmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Location</h4>
-                <p>Calle 22 5678</p>
-            </div>
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>+876987876543</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Articulos</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Suscripciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Información de Contacto</h4>
+                    <ul>
+                        <li>Dirección: 123 Calle Principal</li>
+                        <li>Teléfono: (555) 555-5555</li>
+                        <li>Correo Electrónico: info@ejemplo.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Suscríbete a nuestro boletín</h4>
+                    <form>
+                        <input type="email" placeholder="Ingresa tu correo electrónico">
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <h2 class="titulo-final">&copy; BPM Desing | Bruno Perez</h2>
-
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Bruno Perez. Todos los derechos reservados.</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
     </footer>
 
 
