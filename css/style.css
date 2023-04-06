@@ -144,11 +144,11 @@ header.texto-header {
 }
 
 .galeria {
-    width: 100%;
     display: flex;
-    padding: 25px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    
+    
 
 }
 
@@ -277,7 +277,7 @@ body {
 
 
 .contact_form {
-    width: 90%;
+    width: 50%;
     height: auto;
     margin: 80px auto;
     border-radius: 10px;
@@ -462,9 +462,16 @@ button[type="submit"]:hover {
     color: #ffffff;
 }
 
+
+
 @media (max-width: 425px) {
     .imagen-about-us {
         display: none;
+    }
+
+    .contact_form {
+        width: 90%;
+       
     }
 
     button {
@@ -474,7 +481,7 @@ button[type="submit"]:hover {
 
     .img-sobre-nosotros img {
         width: auto;
-        
+
     }
 
     .suscripciones img {
@@ -541,12 +548,12 @@ button[type="submit"]:hover {
 
     .galeria-suscripcion .card {
         margin: 10px;
-       
+
     }
 
     .galeria-suscripcion {
         padding: 0px;
-       
+
     }
 
 }
