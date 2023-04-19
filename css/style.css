@@ -462,9 +462,21 @@ button[type="submit"]:hover {
     color: #ffffff;
 }
 
+@media (max-width: 768px) {
+    .suscripciones img {
+        margin: 15px;
+    }
+  
 
+   
+}
 
 @media (max-width: 425px) {
+    
+    .texto-header h1 {
+        font-size: 60px;
+       
+    }
     .imagen-about-us {
         display: none;
     }
@@ -518,7 +530,7 @@ button[type="submit"]:hover {
     }
 
     .texto-header h1 {
-        font-size: 70px;
+        font-size: 55px;
 
     }
 
