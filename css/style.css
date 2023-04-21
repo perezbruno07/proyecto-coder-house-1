@@ -11,7 +11,7 @@ body {
 
 .titulo1 {
     color: #642a73;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 80px;
     padding-top: 136px;
@@ -186,6 +186,7 @@ header.texto-header {
 .contenedor-sobre-nosotros-articulo {
     margin: 20px;
     margin-bottom: -52px;
+    
 }
 
 /*Suscripcion*/
@@ -243,7 +244,6 @@ header.texto-header {
 .suscripcion {
     background: hsla(143, 51%, 65%, 0.356);
     width: 100%;
-    padding: 33px;
 }
 
 .galeria-suscripcion {
@@ -254,6 +254,7 @@ header.texto-header {
     justify-content: center;
 
 }
+
 
 .galeria-suscripcion .card {
     object-fit: cover;
@@ -406,12 +407,14 @@ p {
 footer {
     background-color: #262626;
     color: #fff;
-    padding: 50px 0;
+    padding: 26px 0;
+
 }
 
 .container {
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
+    
 }
 
 h4 {
@@ -566,6 +569,21 @@ button[type="submit"]:hover {
     .galeria-suscripcion {
         padding: 0px;
 
+    }
+    .texto-header{
+        margin: -16px;
+    }
+
+    .titulo1{
+        padding-top: 52px;
+    }
+
+    .contenido-texto-sobre-nosotros p {
+        margin-top: -62px;
+    }
+
+    .img-sobre-nosotros img {
+        padding: 5px;
     }
 
 }

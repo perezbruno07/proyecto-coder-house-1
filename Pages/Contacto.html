@@ -1,162 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog & Cat Pet Store</title>
-    <link rel="shortcut icon" href="Multimedia/img/favicon.jpg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,600;1,800&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog & Cat Pet Store</title>
+  <link rel="shortcut icon" href="Multimedia/img/favicon.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,600;1,800&amp;display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../Multimedia/img/Logo_de_la_empresa nav.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../Multimedia/img/Logo_de_la_empresa nav.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Pages/Articulos.html">Articulos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Pages/Sobre-nosotros.html">Sobre Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Pages/Suscripciones.html">Suscripciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Pages/Contacto.html">Contacto</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Articulos.html">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Suscripciones.html">Suscripciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Contacto.html">Contacto</a>
+                </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+        </div>
+    </div>
+</nav>
+  <div class="contact_form">
+    <div class="formulario">
+      <h1>Formulario de contacto</h1>
+      <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+      <form action="submeter-formulario.php" method="post">
+        <p><label for="nombre" class="colocar_nombre">Nombre <span class="obligatorio">*</span></label> <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"></p>
+        <p><label for="email" class="colocar_email">Email <span class="obligatorio">*</span></label> <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email"></p>
+        <p><label for="telefone" class="colocar_telefono">Teléfono</label> <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono"></p>
+        <p><label for="asunto" class="colocar_asunto">Asunto <span class="obligatorio">*</span></label> <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto"></p>
+        <p><label for="mensaje" class="colocar_mensaje">Mensaje <span class="obligatorio">*</span></label> 
+        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea></p><button type="submit-comtacto" name="enviar_formulario" id="button-enviar">
+        <p>Enviar</p></button>
+        <p class="aviso"><span class="obligatorio">*</span> los campos son obligatorios.</p>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Enlaces Útiles</h4>
+          <ul>
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./Articulos.html">Articulos</a>
+            </li>
+            <li>
+              <a href="./Sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li>
+              <a href="./Suscripciones.html">Suscripciones</a>
+            </li>
+            <li>
+              <a href="./Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Información de Contacto</h4>
+          <ul>
+            <li>Dirección: 123 Calle Principal</li>
+            <li>Teléfono: (555) 555-5555</li>
+            <li>Correo Electrónico: info@ejemplo.com</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Suscríbete a nuestro boletín</h4>
+          <form>
+            <input type="email" placeholder="Ingresa tu correo electrónico"> <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2023 Bruno Perez. Todos los derechos reservados.</p>
           </div>
         </div>
-      </nav>   
-    <body>
-   
-        <div class="contact_form">
-    
-            <div class="formulario">
-                <h1>Formulario de contacto</h1>
-                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-    
-    
-                <form action="submeter-formulario.php" method="post">
-    
-    
-                    <p>
-                        <label for="nombre" class="colocar_nombre">Nombre
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                            placeholder="Escribe tu nombre">
-                    </p>
-    
-                    <p>
-                        <label for="email" class="colocar_email">Email
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <input type="email" name="introducir_email" id="email" required="obligatorio"
-                            placeholder="Escribe tu Email">
-                    </p>
-    
-                    <p>
-                        <label for="telefone" class="colocar_telefono">Teléfono
-                        </label>
-                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                    </p>
-    
-        
-    
-                    <p>
-                        <label for="asunto" class="colocar_asunto">Asunto
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
-                            placeholder="Escribe un asunto">
-                    </p>
-    
-                    <p>
-                        <label for="mensaje" class="colocar_mensaje">Mensaje
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                            placeholder="Deja aquí tu comentario..."></textarea>
-                    </p>
-    
-                    <button type="submit-comtacto" name="enviar_formulario" id="button-enviar">
-                        <p>Enviar</p>
-                    </button>
-    
-                    <p class="aviso">
-                        <span class="obligatorio"> * </span>los campos son obligatorios.
-                    </p>
-    
-                </form>
-            </div>
-        </div>
-    
-    </body>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Enlaces Útiles</h4>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./Articulos.html">Articulos</a></li>
-                        <li><a href="./Sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="./Suscripciones.html">Suscripciones</a></li>
-                        <li><a href="./Contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Información de Contacto</h4>
-                    <ul>
-                        <li>Dirección: 123 Calle Principal</li>
-                        <li>Teléfono: (555) 555-5555</li>
-                        <li>Correo Electrónico: info@ejemplo.com</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Suscríbete a nuestro boletín</h4>
-                    <form>
-                        <input type="email" placeholder="Ingresa tu correo electrónico">
-                        <button type="submit">Suscribirse</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>&copy; 2023 Bruno Perez. Todos los derechos reservados.</p>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-<html>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
